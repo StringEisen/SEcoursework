@@ -1,0 +1,5 @@
+public class Stop{
+   private String stopId;
+   private Calendar time;
+
+}

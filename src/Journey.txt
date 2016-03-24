@@ -1,0 +1,7 @@
+public class Journey{
+   private String journeyId;
+   private ArrayList<Stop> timetable;
+
+
+
+}
