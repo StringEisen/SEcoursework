@@ -5,6 +5,6 @@ public class Train{
   private Driver driver;
 
   public void setDriver(Driver driver){ 
-      this.driver=driver;
+      this.driver = driver;
   }
 }

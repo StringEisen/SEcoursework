@@ -1,5 +1,0 @@
-public class Route{
-  private String routeName£»
-  private String roudeId£»
-  private ArrayList<Journey> journey;
-}
