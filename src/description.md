@@ -1,10 +1,10 @@
-##¸÷ÀàµÄ½âÊÍ
+##å„ç±»çš„è§£é‡Š
 
-*Stop.java
-Õâ¸öÀà¶¨ÒåÁË»ğ³µÍ£¿¿µÄÕ¾Ì¨£¬±äÁ¿ÓĞÕ¾Ì¨ID£¬ºÍ¸ÃÕ¾µ½ÏÂÒ»Õ¾µÄÊ±³¤
+* Stop.java
+è¿™ä¸ªç±»å®šä¹‰äº†ç«è½¦åœé çš„ç«™å°ï¼Œå˜é‡æœ‰ç«™å°IDï¼Œå’Œè¯¥ç«™åˆ°ä¸‹ä¸€ç«™çš„æ—¶é•¿
 
-*Journey.java
-Õâ¸öÀàÖĞ°üº­Ò»¸ö³ĞÔØStop¶ÔÏóµÄArrayList,ÁíÍâ»¹ÓĞJourney¶ÔÏóµÄID£¬Journey¶ÔÏó´Ócentral station ³ö·¢µÄÊ±¼ä£¬ºÍÒ»¸öIterator£¨ÓÃÓÚprint³öÀ´ËùÓĞStop£©
+* Journey.java
+è¿™ä¸ªç±»ä¸­åŒ…æ¶µä¸€ä¸ªæ‰¿è½½Stopå¯¹è±¡çš„ArrayList,å¦å¤–è¿˜æœ‰Journeyå¯¹è±¡çš„IDï¼ŒJourneyå¯¹è±¡ä»central station å‡ºå‘çš„æ—¶é—´ï¼Œå’Œä¸€ä¸ªIteratorï¼ˆç”¨äºprintå‡ºæ¥æ‰€æœ‰Stopï¼‰
 
-*Route.java
-RouteÀàÖĞ±äÁ¿ÓĞRoute¶ÔÏóµÄÃû³Æ£¬routeµÄID£¬ºÍÒ»¸ö³ĞÔØJourney¶ÔÏóµÄArrayList
+* Route.java
+Routeç±»ä¸­å˜é‡æœ‰Routeå¯¹è±¡çš„åç§°ï¼Œrouteçš„IDï¼Œå’Œä¸€ä¸ªæ‰¿è½½Journeyå¯¹è±¡çš„ArrayList
