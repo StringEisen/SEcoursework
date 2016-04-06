@@ -1,4 +1,4 @@
-public class System{
+public class MSystem{
   public System{
       for(int t=0; t<4; t++){
          private Train train;
