@@ -24,6 +24,10 @@ public class Journey {
         journeyId = ""+id.nextInt(999)+1;
     }
     
+    public String getId() {
+        return journeyId;
+    }
+    
     public void setStartTime(int hour, int min) {
         //startTime = new GregorianCalendar();
         //startTime.set(Calendar.HOUR_OF_DAY, hour);
@@ -37,7 +41,7 @@ public class Journey {
     /*
      * remove stop by id
      * @return time duration of the removed stop
-     * @arg String id
+     * @var String id
      */
     public int removeStop(String id) {
         int value = 0;
@@ -53,7 +57,7 @@ public class Journey {
     /*
      * remove stop by its position
      * @return time duration of the removed stop
-     * @arg int index
+     * @var int index
      */
     public int removeStop(int index) {
         Stop station = timetable.remove(index);
@@ -62,7 +66,7 @@ public class Journey {
     
     /**
      * add stop at the end of the journey
-     * @arg Stop stop
+     * @var Stop stop
      */
     public void addStop(Stop stop) {
         if (stop.getTime() <= 0) throw new IllegalArgumentException("Invalid stop time");
@@ -72,7 +76,7 @@ public class Journey {
     
     /*
      * insert stop to a specific position
-     * @arg Stop stop, int index
+     * @var Stop stop, int index (1~)
      */
     public void addStop(Stop stop, int index) {
         timetable.add(index, stop);
