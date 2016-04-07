@@ -4,6 +4,7 @@
 //import java.util.GregorianCalendar;
 import java.util.Random;
 import java.util.ArrayList;
+//import Stop;
 
 /*
  * a Journey consist of a list of Stop (time durations to the next stop)
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * we can remove stop by finding stopId
  * we can iterate stops within the journey
  */
-public class Journey{
+public class Journey { 
     private String journeyId;
     private Time startTime;
     private ArrayList<Stop> timetable;
@@ -33,6 +34,11 @@ public class Journey{
         startTime.min = min;
     }
     
+    /*
+     * remove stop by id
+     * @return time duration of the removed stop
+     * @arg String id
+     */
     public int removeStop(String id) {
         int value = 0;
         for (Stop station : timetable) {
@@ -44,22 +50,38 @@ public class Journey{
         return value;
     }
     
+    /*
+     * remove stop by its position
+     * @return time duration of the removed stop
+     * @arg int index
+     */
     public int removeStop(int index) {
         Stop station = timetable.remove(index);
         return station.getTime();
     }
     
+    /**
+     * add stop at the end of the journey
+     * @arg Stop stop
+     */
     public void addStop(Stop stop) {
         if (stop.getTime() <= 0) throw new IllegalArgumentException("Invalid stop time");
         // add stop by the end of the journey
         timetable.add(stop);
     }
     
-    // insert stop to a specific position
+    /*
+     * insert stop to a specific position
+     * @arg Stop stop, int index
+     */
     public void addStop(Stop stop, int index) {
         timetable.add(index, stop);
     }
     
+    /*
+     * convert stop list into the real timetable
+     * @return ArrayList<Time>
+     */
     public ArrayList<Time> getJourney() {
         int minute = startTime.min;
         int hour = startTime.hour;
@@ -88,11 +110,6 @@ public class Journey{
             }
         }
         return time;
-    }
-    
-    private class Time {
-        int hour;
-        int min;
     }
     
     public static void main(String arg[]) {
